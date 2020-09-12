@@ -1,2 +1,2 @@
 # code
-Código de prueba para los slides de las clases, para bajar, probar y romper 
+Códigos de prueba para los slides de las clases, para bajar, probar y romper. Todo en C. 
