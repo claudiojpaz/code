@@ -1,0 +1,15 @@
+#use glob syntax.
+syntax: glob
+
+#programacion
+*.out
+*.o
+*.pyc
+
+#editor textos
+*~
+*.swp
+
+#particular
+log/*
+
