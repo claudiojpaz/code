@@ -7,10 +7,7 @@ struct dato {
 
 int main (void)
 {
-  struct dato d = {1, 'a'};
-
-  printf("miembro a: %d\n", d.a);
-  printf("miembro b: %c\n", d.b);
+  struct dato d;
 
   return 0;
 }
