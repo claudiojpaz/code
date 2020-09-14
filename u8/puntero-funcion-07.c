@@ -34,7 +34,7 @@ void imprimir(int arr[], int n) {
 int main (void) {
   int vec[N] = {1,9,4,8,6,0,3,5,7,2};
 
-  burbuja(vec, N, ascendente);
+  burbuja(vec, N, descendente);
   imprimir(vec, N);
 
   return 0;
