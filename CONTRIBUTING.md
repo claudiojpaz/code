@@ -26,7 +26,7 @@ git checkout -b rama-tu_nombre_de_usuario
 
 Luego, elegí algún archivo que quieras completar (de los que no están) de alguna unidad entre la 3 y la 7
 
-Si la carpeta de la unidad que elegiste no existe, creala (ejemplo u3) deben ser con la u minuscula y el número sin espacio
+Si la carpeta de la unidad que elegiste no existe, creala (ejemplo u3) deben ser con la u minúscula y el número sin espacio
 
 ```
 mkdir u3
