@@ -3,7 +3,7 @@
 #define N 10
 
 struct estudiante {
-  int legajo;
+  int cod;
   char nombre[40];
   int nota;
 };
@@ -35,7 +35,7 @@ void crear_db (void)
   fp = fopen("base.bin", "wb");
 
   for (int i = 0 ; i < N; i++) {
-    est_cero.legajo = i;
+    est_cero.cod = i;
     fwrite(&est_cero, sizeof(struct estudiante), 1, fp);
   }
 
@@ -50,7 +50,7 @@ void leer_db (FILE *fp)
 
   for (int i = 0 ; i < N; i++) {
     fread(&est, sizeof(struct estudiante), 1, fp);
-    printf("legajo: %d ", est.legajo);
+    printf("cod: %d ", est.cod);
     printf("nombre: %-40s ", est.nombre);
     printf("nota: %d\n", est.nota);
   }
@@ -61,14 +61,14 @@ void modificar_db (FILE *fp)
 {
   struct estudiante est;
 
-  printf("Ingrese legajo: ");
-  scanf("%d", &est.legajo);
+  printf("Ingrese cod: ");
+  scanf("%d", &est.cod);
   printf("Ingrese el nombre: ");
   scanf("%s", est.nombre);
   printf("Ingrese la nota: ");
   scanf("%d", &est.nota);
 
-  fseek(fp, est.legajo*sizeof(struct estudiante), SEEK_SET);
+  fseek(fp, est.cod*sizeof(struct estudiante), SEEK_SET);
 
   fwrite(&est, sizeof(struct estudiante), 1, fp);
 }
@@ -92,6 +92,7 @@ void menu (FILE *fp)
         break;
       case 10:
         crear_db();
+        break;
       default:
         printf("Opción no válida\n");
     }
