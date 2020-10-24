@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 
 #define N 80
@@ -9,6 +10,7 @@ int main (void)
   FILE * fpo;
   char cadena[N] = {0};
   int repetir = 0;
+  int jugadores = 0;
 
   fpi = fopen("conf.txt", "r");
   if ( fpi == NULL ) {
@@ -22,18 +24,28 @@ int main (void)
     return 1;
   }
 
-  fscanf(fpi, " %s", cadena);
-  fprintf(fpo, "%s\n", cadena);
-  fprintf(fpo, "manzana\n");
-  fscanf(fpi, " %s", cadena);
-  fprintf(fpo, "%s\n", cadena);
+  printf("Cuandos jugadores: ");
+  scanf("%d", &jugadores);
 
-  system("mv frutas_temp.txt frutas.txt");
+  repetir = 1;
+  do {
+    fscanf(fpi, " %s", cadena);
+    if ( !feof(fpi) ) {
+      if (strncmp(cadena, "jugadores", 9) == 0)
+        fprintf(fpo, "jugadores=%d\n", jugadores);
+      else
+        fprintf(fpo, "%s\n", cadena);
+    } else {
+      repetir = 0;
+    }
+  } while (repetir == 1);
+
+  system("mv conf_temp.txt conf.txt");
 
   fclose(fpi);
   fclose(fpo);
 
-  fpi = fopen("frutas.txt", "r");
+  fpi = fopen("conf.txt", "r");
   if ( fpi == NULL ) {
     printf("No se pudo abrir...\n");
     return 1;
@@ -51,4 +63,5 @@ int main (void)
   fclose(fpi);
   return 0;
 }
+
 

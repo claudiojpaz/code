@@ -1,0 +1,3 @@
+resolucion=1
+jugadores=3
+vidas=3
