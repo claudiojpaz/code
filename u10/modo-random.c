@@ -21,7 +21,7 @@ int main (void)
 {
   FILE *fp;
 
-  fp = fopen("base.dat", "rb+");
+  fp = fopen("base.dat", "r+");
 
   menu(fp);
 
