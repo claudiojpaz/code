@@ -5,7 +5,7 @@ Códigos de prueba para los slides de las clases, para bajar, probar y romper. T
 Desde linux se puede clonar este repsitorio con `git`. En una terminal, en el directorio donde se quiere dejar el repositorio escribir (sin el $)
 ```
 $ git clone https://github.com/claudiojpaz/code.git
-$ cd clone
+$ cd code
 ```
 
 En el directorio inicial están las cosas comunes a todos los años. Para pasarse al código de este año hay que hacer
