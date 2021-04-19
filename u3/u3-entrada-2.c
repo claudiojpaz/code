@@ -6,11 +6,8 @@ int main (void)
   int sum1, sum2;
   int res;
 
-  printf("Ingrese un número: ");
-  scanf("%d", &sum1);
-
-  printf("Ingrese otro número: ");
-  scanf("%d", &sum2);
+  printf("Ingrese dos números separandolos por espacios: ");
+  scanf("%d %d", &sum1, &sum2);
 
   res = sum1 + sum2;
 
