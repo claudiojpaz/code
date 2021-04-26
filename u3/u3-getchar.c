@@ -4,7 +4,6 @@
 int main (void)
 {
   int numero;
-  char n;
 
   printf("Ingrese un caracter de la tabla ASCII: ");
   numero = getchar();
