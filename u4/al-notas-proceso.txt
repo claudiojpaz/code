@@ -1,0 +1,33 @@
+inicio
+  ingreso de notas
+  cálculo de condición
+  mostrar condición
+fin
+
+inicio
+  ingreso de notas
+  cálculo de condición
+    separar aprobados/desaprobados
+    de los apr. separar AD/regulares
+  mostrar condición
+fin
+
+inicio
+  imprimir: "ingrese la nota"
+  leer: n
+
+  si n >= 6 entonces
+    si n < 8 entonce
+      resultado = "Regular"
+    si no
+      resultado = "Aprobado Directo"
+    fin si
+  si no
+    resultado = "Desaprobado"
+  fin si
+
+  imprimir: "Su condición es "
+  imprimir: resultado
+
+fin
+

@@ -1,0 +1,32 @@
+// Estos pseudo-códigos no hacen todos lo mismo, y algunos están mal
+
+inicio
+  n = 7
+  si n >= 6 entonces
+    si n < 8 entonces
+      imprimir: "6 o 7"
+    fin si
+  fin si
+fin
+
+inicio
+  n = 7
+  si n >= 6 y n < 8 entonces
+    imprimir: "6 o 7"
+  fin si
+fin
+
+inicio
+  n = 7
+  si n <= 6 y n > 8 entonces
+    imprimir: "6 o 7"
+  fin si
+fin
+
+inicio
+  n = 7
+  si n >= 6 o n < 8 entonces
+    imprimir: "6 o 7"
+  fin si
+fin
+

@@ -1,0 +1,9 @@
+inicio
+
+ingreso
+
+condición
+
+mostrar resultado
+
+fin

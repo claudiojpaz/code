@@ -1,0 +1,18 @@
+inicio
+
+  imprimir: "Ingrese la calificación"
+  leer: n
+
+  si n >= 6 entonces
+    si n < 8 entonces
+      resultado = "Regular"
+    si no
+      resultado = "Ap.Dir."
+    fin si
+  si no
+    resultado = "Desaprobado"
+  fin si
+
+  imprimir: "Su condición es "
+  imprimir: resultado
+fin
