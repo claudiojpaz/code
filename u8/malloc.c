@@ -15,6 +15,11 @@ int main (void) {
   int *p;
   int n;
 
+  void *v = &n;
+
+  *v = 3;
+
+
   printf("Cuantos elementos cargará? ");
   scanf("%d", &n);
 
