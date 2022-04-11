@@ -12,5 +12,8 @@ En el directorio inicial están las cosas comunes a todos los años. Para pasars
 ```
 $ git checkout <año actual>
 ```
-donde `<año actual>` es precisamente el año en curso (o del curso) sin los `< >`
+donde `<año actual>` es precisamente el año en curso (o del curso) sin los `< >`. Ejemplo, para 2022:
 
+```
+$ git checkout 2022
+```
