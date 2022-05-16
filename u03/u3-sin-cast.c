@@ -11,7 +11,7 @@ int main (void)
   printf("Ingrese cuantas notas son: ");
   scanf("%d", &cuantas_notas);
 
-  promedio = suma_notas / cuantas_notas; // ojo! potencial error
+  promedio = suma_notas / (float) cuantas_notas;
 
   printf("Promedio: %.2f\n", promedio);
 
