@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-#define EN
+#if defined EN
+#define MSG "Hello\n"
+#else
+#define MSG "Hola\n"
+#endif
 
 int main (void) {
 
-#ifdef EN
-  printf("hello\n");
-#else
-  printf("hola\n");
-#endif
+  printf(MSG);
 
   return 0;
 }
