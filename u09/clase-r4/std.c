@@ -1,26 +1,22 @@
 #include <stdio.h>
 
-struct test {
-  char a;
-  char x;
-  float b;
-  char c;
-};
-
-struct punto2D {
+typedef struct {
   float x;
   float y;
-};
+} p2D_t;
+
+typedef p2D_t * pp2D_t;
 
 int main (void) {
-  struct punto2D p1;
+  p2D_t p1;
+  pp2D_t p; // no hacer esto
 
-  printf("%ld\n", sizeof (struct test));
+  p = &p1;
 
   p1.x = 3;
   p1.y = 4;
 
-  printf("%.2f %.2f\n", p1.x, p1.y);
+  printf("%.2f %.2f\n", p->x, p1.y);
 
   return 0;
 }
