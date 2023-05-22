@@ -1,1 +1,0 @@
-void subrayado (int, char);
