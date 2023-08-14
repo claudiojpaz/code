@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#ifdef __unix__
+#define ERASE "clear"
+#else
+#define ERASE "cls"
+#endif
+
+int main (void) {
+  system("ls");
+
+  printf("Hola, mundo!\n");
+
+  return 0;
+}
+
