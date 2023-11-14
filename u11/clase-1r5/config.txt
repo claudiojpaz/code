@@ -1,0 +1,3 @@
+jugadores 10
+mapax 250
+mapay 250
