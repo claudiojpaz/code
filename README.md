@@ -17,3 +17,9 @@ donde `<año actual>` es precisamente el año en curso (o del curso) sin los `< 
 ```
 $ git checkout 2024
 ```
+
+A partir de ahí, cada vez que se modifique el repositorio en clase, en cada computadora hay que hacer 
+
+```
+$ git pull
+```
