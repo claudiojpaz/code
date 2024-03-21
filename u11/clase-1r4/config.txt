@@ -1,3 +1,0 @@
-mapay 48
-jugadores 2
-mapax 64
