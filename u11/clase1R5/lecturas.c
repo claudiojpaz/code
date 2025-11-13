@@ -10,10 +10,10 @@ int main(void){
     return 1;
   }
 
+  fscanf(fp, "%s", buff);
   while(!feof(fp)) {
+    printf("%s\n", buff);
     fscanf(fp, "%s", buff);
-    if(!feof(fp))
-        printf("%s\n",buff);
   }
 
   rewind(fp);
